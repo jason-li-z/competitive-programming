@@ -1,2 +1,3 @@
-# competitive-programming
-competitive-programming training
+# Competitive Programming Practice
+
+###### Atcoder, Codeforces problems.
