@@ -24,3 +24,24 @@ public:
         return count;
     }
 };
+
+class Solution2 {
+public:
+    int countElements2(vector<int>& arr) {
+        if(arr.size() == 0) {
+            return 0;
+        }
+        
+        sort(arr.begin(), arr.end());
+        int count = 0;
+        
+        for(int i = 0; i < arr.size(); i++) {
+            int current = arr[i];
+            if(binary_search(arr.begin(), arr.end(), current + 1)) {
+                count++;
+            }
+        }
+        
+        return count;
+    }
+};
