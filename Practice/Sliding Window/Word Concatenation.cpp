@@ -19,7 +19,7 @@ class Solution {
    public:
     static vector<int> findSubstring(const string& str, const vector<string>& words) {
         unordered_map<string, int> wordCount;
-
+    
         for (const auto& word : words) {
             wordCount[word]++;
         }
